@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables & Media</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-image: url(75.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            font-weight: bold;
+            text-align: justify;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        .font-style {
+            font-family: 'Times';
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        .adaptive-text {
+            color: rgb(237, 237, 237);
+            transition: color 0.1s;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+        table {
+            border-color: #000000;
+            background-color: rgba(77, 79, 106, 0.317);
+        }
+        .video-button {
+            margin-top: 10px;
+        }
+    
+        .play-btn {
+        background-color: #6144444d;
+        color: #ffffff;
+    }
+    .pause-btn {
+        background-color: #6144444d;
+        color: #ffffff;
+    }
+    .prev-btn {
+        background-color:  #6144444d;
+        color: #ffffff;
+    }
+    .next-btn {
+        background-color: #6144444d;
+        color: #ffffff;
+    }
+          .resume-btn {
+            background-color: #6144444d;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="font-style center adaptive-text"><b>Table</b></h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container adaptive-text">
+        <p>Tables are a nice way to organize a lot of data. We provide a few utility classes to help you style your table as easily as possible. In addition, to improve mobile experience, all tables on mobile-screen widths are centered automatically.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>7.00</td>
+                </tr>   
+            </tbody>
+        </table>
+        <h3 class="font-style adaptive-text"><b>Striped Table</b></h3>
+        <p>Add class="striped" to the table tag for a striped table.</p>
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>7.00</td>
+                </tr>   
+            </tbody>
+        </table>
+
+        <h3 class="font-style adaptive-text"><b>Highlight Table</b></h3>
+        <p>Add class="highlight" to the table tag for a highlight table.</p>
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>7.00</td>
+                </tr>   
+            </tbody>
+        </table>
+
+        <h3 class="font-style adaptive-text"><b>Centered Table</b></h3>
+        <p>Add class="centered" to the table tag to center align all the text in the table.</p>
+        <table class="centered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>7.00</td>
+                </tr>   
+            </tbody>
+        </table>
+
+        <h3 class="font-style adaptive-text"><b>Responsive Table</b></h3>
+        <p>Add class="responsive-table" to the table tag to make the table horizontally scrollable on smaller screen widths.</p>
+        <table class="responsive-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>7.00</td>
+                </tr>   
+            </tbody>
+        </table>
+    </div>
+    <br>
+
+    <br>
+    <h1 class="font-style center adaptive-text"><b>Media CSS</b></h1>
+    <div class="divider"></div>
+    <div class="container adaptive-text">
+        <h3 class="font-style adaptive-text"><b>Images</b></h3>
+        <p>Images can be styled in different ways using Materialize.</p>
+        <p class="flow-text">Responsive Image</p>
+        <p>To make images resize responsively to page width, you can add the class responsive-img it will now have a max-width: 100% and height:auto.</p>
+        <p class="flow-text">Circular Image</p>
+        <div class="row">
+            <div class="col s12 m8 offset-m2 l6 offset-l3">
+                <div class="card-panel grey lighten-4 z-depth-1">
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="cat.jpg" alt="" class="responsive-img circle">
+                        </div>
+                        <div class="col s10">
+                            <span class="black-text">
+                                This is a square image. Add the "circle" class to it to make it appear circular.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="flow-text">Material Boxed</p>
+        <p>Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.</p>
+
+        <img src="https://i.pinimg.com/564x/5d/a2/63/5da263d41684a1c05ae2ce741f599cee.jpg" alt="" class="materialboxed responsive-img" data-caption="Starry Night">
+        <div style="height: 10px;"></div>
+
+        <h3 class="font-style adaptive-text"><b>Slider</b></h3>
+        <p>Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+       
+<div class="slider">
+    <ul class="slides">
+        <li id="slide1">
+            <img src="https://i.ytimg.com/vi/H84CYaNZyBI/maxresdefault.jpg">
+            <div class="caption center-align">
+                <h3 class="font-style">Tingin</h3>
+                <h5 class="font-style light grey-text text-lighten-3">by: Cup of Joe</h5>
+                <audio id="music1" src="Tingin (feat. Janine Teñoso).mp3"></audio>
+                <a class="btn play-btn" onclick="playMusic('music1', 'slide1')"><i class="fas fa-play"></i> Play</a>
+                <a class="btn pause-btn" onclick="pauseMusic('music1')"><i class="fas fa-pause"></i> Pause</a>
+                <a class="btn resume-btn" onclick="resumeMusic('music1')"><i class="fas fa-play"></i> Resume</a>
+                <button class="btn prev-btn" onclick="previousSlide()"><i class="fas fa-arrow-left"></i> Previous</button>
+                <button class="btn next-btn" onclick="nextSlide('slide2')"><i class="fas fa-arrow-right"></i> Next</button>
+                
+            </div>
+        </li>
+        <li id="slide2">
+            <img src="https://geo-media.beatsource.com/image_size/500x500/2/b/a/2ba8cea7-8872-4310-b648-dde399ea8079.jpg"> 
+            <div class="caption left-align">
+                <h3 class="font-style adaptive-text">Maria Clara</h3>
+                <h5 class="font-style light grey-text text-lighten-3">by: Sugarcane</h5>
+                <audio id="music2" src="Maria Clara.mp3"></audio>
+                <a class="btn play-btn" onclick="playMusic('music2', 'slide2')"><i class="fas fa-play"></i> Play</a>
+                <a class="btn pause-btn" onclick="pauseMusic('music2')"><i class="fas fa-pause"></i> Pause</a>
+                <a class="btn resume-btn" onclick="resumeMusic('music2')"><i class="fas fa-resume"></i>Resume</a>
+                <button class="btn prev-btn" onclick="previousSlide('slide1')"><i class="fas fa-arrow-left"></i> Previous</button>
+                <button class="btn next-btn" onclick="nextSlide('slide3')"><i class="fas fa-arrow-right"></i> Next</button>
+              
+            </div>
+        </li>
+        <li id="slide3">
+            <img src="https://i.scdn.co/image/ab67616d0000b2737ceec525a06a0a3b96f533d6"> 
+            <div class="caption right-align">
+                <h3 class="font-style adaptive-text">Paalam, Leonora</h3>
+                <h5 class="font-style light grey-text text-lighten-3">by: Sugarcane</h5>
+                <audio id="music3" src="Paalam, Leonora.mp3"></audio>
+                <a class="btn play-btn" onclick="playMusic('music3', 'slide3')"><i class="fas fa-play"></i> Play</a>
+                <a class="btn pause-btn" onclick="pauseMusic('music3')"><i class="fas fa-pause"></i> Pause</a>
+                <a class="btn resume-btn" onclick="resumeMusic('music3')"><i class="fas fa-resume"></i>Resume</a>
+                <button class="btn prev-btn" onclick="previousSlide('slide2')"><i class="fas fa-arrow-left"></i> Previous</button>
+                <button class="btn next-btn" onclick="nextSlide()"><i class="fas fa-arrow-right"></i> Next</button>
+                
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="controls">
+    <span id="audioDuration"></span>
+</div>
+   <!-- Jquery CDN -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.min.js"></script>
+        <script>
+            var currentSlideIndex = 0;
+            var audioElements = document.querySelectorAll('audio');
+            var currentlyPlayingAudio = null;
+        
+            function playMusic(elementId, slideId) {
+                var audio = document.getElementById(elementId);
+        
+                if (currentlyPlayingAudio && currentlyPlayingAudio !== audio) {
+                    currentlyPlayingAudio.pause();
+                    currentlyPlayingAudio.resume();
+                    currentlyPlayingAudio.currentTime = 0;
+                }
+        
+                audio.currentTime = 0;
+                audio.loop = true;
+                audio.play();
+                currentlyPlayingAudio = audio;
+        
+                
+                currentSlideIndex = Number(slideId.replace("slide", "")) - 1;
+            }
+        
+            function pauseMusic(elementId) {
+                var audio = document.getElementById(elementId);
+                audio.pause();
+                currentlyPlayingAudio = null;
+            }
+            function resumeMusic(elementId) {
+             var audio = document.getElementById(elementId);
+                audio.play();
+                currentlyPlayingAudio = audio;
+}
+        
+            function previousSlide() {
+                if (currentSlideIndex > 0) {
+                    pauseMusic('music' + (currentSlideIndex + 1));
+                    currentSlideIndex--;
+                    $('.slider').slider('prev');
+                }
+            }
+         
+         
+            function nextSlide() {
+                if (currentSlideIndex < $('.slides li').length - 1) {
+                    pauseMusic('music' + (currentSlideIndex + 1));
+                    currentSlideIndex++;
+                    $('.slider').slider('next');
+                }
+            }
+            
+            $(document).ready(function(){
+                $('.slider').slider({
+                    interval: 3.154e+10
+                });
+                
+                $('.materialboxed').materialbox({
+                    inDuration: 1000,
+                    outDuration: 1000
+                });
+        
+                function getBrightness(hexColor) {
+                    hexColor = hexColor.replace('#', '');
+        
+                    var r = parseInt(hexColor.substring(0, 2), 16);
+                    var g = parseInt(hexColor.substring(2, 4), 16);
+                    var b = parseInt(hexColor.substring(4, 6), 16);
+        
+                    return ((r * 299) + (g * 587) + (b * 114)) / 1000;
+                }
+        
+                var img = new Image();
+                img.src = '75.jpg';
+                img.crossOrigin = 'Anonymous';
+                img.onload = function() {
+                    var colorThief = new ColorThief();
+                    var dominantColor = colorThief.getColor(img);
+                    var hexColor = rgbToHex(dominantColor[0], dominantColor[1], dominantColor[2]);
+        
+                    var brightness = getBrightness(hexColor);
+        
+                    if (brightness < 128) {
+                        $('.adaptive-text').css('color', 'white');
+                    } else {
+                        $('.adaptive-text').css('color', 'black');
+                    }
+                };
+        
+                function rgbToHex(r, g, b) {
+                    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+                }
+        
+                window.redirectVideo = function(url) {
+                    window.location.href = url;
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
